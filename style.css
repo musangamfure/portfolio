@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 375px;
+  height: 718px;
+}
+
+.header {
+  width: 100%;
+  margin: 0 24px;
+  padding: 20px 0;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #6070ff;
+}
+.menu-bar i {
+  font-size: 25px;
+  color: #6070ff;
+}
+
+.header-title {
+  height: 150px;
+  width: 327px;
+  margin-top: 114px;
+  margin-bottom: 12px;
+}
+.header-about {
+  height: 146px;
+  width: 327px;
+  margin-bottom: 12px;
+}
+.header-title h1 {
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  font-weight: 700;
+}
+.header-about p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  text-align: justify;
+  padding: 12px 0;
+}
+.header-contact {
+  height: 24px;
+  margin: 12px 0;
+}
+.header-contact h4 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  color: #7f8cff;
+  padding: 12px 0;
+}
+
+.header-social-icons a {
+  font-size: 30px;
+  padding: 12px 0;
+  margin-right: 15px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s ease;
+}
+.header-social-icons a:hover {
+  color: #6070ff;
+  transform: translateY(-6px);
+}
