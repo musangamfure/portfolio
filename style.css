@@ -8,8 +8,10 @@ body {
   font-family: "Poppins", sans-serif;
   width: 375px;
   height: 718px;
+
   /* width: 100%; */
   padding: 0 24px;
+
   /* padding: 20px 0; */
   top: 0;
 }
@@ -60,9 +62,11 @@ body {
   text-align: justify;
   padding: 12px 0;
 }
+
 .btn {
   margin-top: 12px;
 }
+
 .hero-btn {
   text-transform: uppercase;
   font-weight: 500;
