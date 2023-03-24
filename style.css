@@ -8,15 +8,14 @@ body {
   font-family: "Poppins", sans-serif;
   width: 375px;
   height: 718px;
+  /* width: 100%; */
+  padding: 0 24px;
+  /* padding: 20px 0; */
+  top: 0;
 }
 
 .header {
-  width: 100%;
-  margin: 0 24px;
-  padding: 20px 0;
-}
-
-.nav {
+  padding: 0 24px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -33,27 +32,27 @@ body {
   color: #6070ff;
 }
 
-.header-title {
+.hero-title {
   height: 150px;
   width: 327px;
   margin-top: 114px;
   margin-bottom: 12px;
 }
 
-.header-about {
+.hero-text {
   height: 146px;
   width: 327px;
   margin-bottom: 12px;
 }
 
-.header-title h1 {
+.hero-title h1 {
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
   font-weight: 700;
 }
 
-.header-about p {
+.hero-text p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -61,21 +60,20 @@ body {
   text-align: justify;
   padding: 12px 0;
 }
-
-.header-contact {
-  height: 24px;
-  margin: 12px 0;
+.btn {
+  margin-top: 12px;
 }
-
-.header-contact h4 {
+.hero-btn {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
   color: #7f8cff;
-  padding: 12px 0;
+  padding: 6px 0;
+  border: none;
+  background: #fff;
 }
 
-.header-social-icons a {
+.hero-social-icons a {
   font-size: 30px;
   padding: 12px 0;
   margin-right: 15px;
@@ -84,7 +82,7 @@ body {
   transition: transform 0.5s ease;
 }
 
-.header-social-icons a:hover {
-  color: #6070ff;
+.hero-social-icons a:hover {
+  color: #505f79;
   transform: translateY(-6px);
 }
