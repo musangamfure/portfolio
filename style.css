@@ -22,7 +22,15 @@ body {
   align-items: center;
 }
 
-.logo a {
+ul li a {
+  font-size: 30px;
+  padding: 12px 0;
+  margin-right: 15px;
+  color: #ababab;
+  cursor: pointer;
+}
+
+.header a {
   text-decoration: none;
   color: #6070ff;
 }
@@ -75,18 +83,12 @@ body {
   background: #fff;
   cursor: pointer;
 }
+
 ul li {
   text-decoration: none;
   display: inline-block;
 }
 
-ul li a {
-  font-size: 30px;
-  padding: 12px 0;
-  margin-right: 15px;
-  color: #ababab;
-  cursor: pointer;
-}
 ul li a:hover {
   color: #505f79;
 }
