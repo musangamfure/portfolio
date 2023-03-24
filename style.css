@@ -27,6 +27,7 @@ body {
   text-decoration: none;
   color: #6070ff;
 }
+
 .menu-bar i {
   font-size: 25px;
   color: #6070ff;
@@ -38,17 +39,20 @@ body {
   margin-top: 114px;
   margin-bottom: 12px;
 }
+
 .header-about {
   height: 146px;
   width: 327px;
   margin-bottom: 12px;
 }
+
 .header-title h1 {
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
   font-weight: 700;
 }
+
 .header-about p {
   font-weight: 400;
   font-size: 16px;
@@ -57,10 +61,12 @@ body {
   text-align: justify;
   padding: 12px 0;
 }
+
 .header-contact {
   height: 24px;
   margin: 12px 0;
 }
+
 .header-contact h4 {
   text-transform: uppercase;
   font-weight: 500;
@@ -77,6 +83,7 @@ body {
   display: inline-block;
   transition: transform 0.5s ease;
 }
+
 .header-social-icons a:hover {
   color: #6070ff;
   transform: translateY(-6px);
