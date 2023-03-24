@@ -117,7 +117,7 @@ Not avaibale for now.
 
 👤 **Emmanuel**
 
-- GitHub: [@https://github.com/musangamfure()
+- GitHub: [@https://github.com/musangamfure]()
 - Twitter: [@https://twitter.com/musangamfure]()
 - LinkedIn: [@https://www.linkedin.com/in/musangamfura-emmanuel-6a214a262/]()
 
