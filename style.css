@@ -2,9 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-image: url(./imges/background\ image.png);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 body {
@@ -12,6 +9,12 @@ body {
   width: 375px;
   height: 718px;
   padding: 0 24px;
+}
+.hero {
+  background-image: url(./imges/background\ image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: left;
 }
 
 .header {
