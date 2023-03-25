@@ -17,19 +17,12 @@ body {
   background-position-x: left;
 }
 
-.container {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-}
 .header {
   padding-top: 40px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 375px;
-  padding: 0 38px;
 }
 
 ul li a {
@@ -106,6 +99,7 @@ ul li a:hover {
   color: #505f79;
 }
 /* work section */
+
 .works {
   width: 375px;
   background: #e5e5e5;
@@ -177,7 +171,6 @@ h4 {
 
 .primary-text {
   width: 295px;
-  /* height: 76px; */
 }
 
 .primary-text p {
@@ -238,6 +231,7 @@ h4 {
   justify-content: space-between;
   margin: 20px 0;
 }
+
 .l-title,
 .l-icon,
 .f-title,
@@ -247,6 +241,7 @@ h4 {
   display: inline-block;
   vertical-align: middle;
 }
+
 .l-title {
   padding-right: 70px;
 }
