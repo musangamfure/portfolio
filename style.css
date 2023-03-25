@@ -6,24 +6,30 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  width: 375px;
-  height: 718px;
-  padding: 0 24px;
 }
 
 .hero {
-  background-image: url(./imges/background\ image.png);
+  width: 375px;
+  padding: 0 24px;
+  background-image: url(./images/background\ image.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: left;
 }
 
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
 .header {
   padding-top: 40px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 375px;
+  padding: 0 38px;
 }
 
 ul li a {
@@ -51,7 +57,8 @@ ul li a {
   margin-bottom: 12px;
 }
 
-.hero-text {
+.hero-text,
+.about-text {
   height: 146px;
   width: 327px;
   margin-bottom: 12px;
@@ -64,7 +71,8 @@ ul li a {
   font-weight: 700;
 }
 
-.hero-text p {
+.hero-text,
+.about-text p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -77,7 +85,8 @@ ul li a {
   margin-top: 12px;
 }
 
-.hero-btn {
+.hero-btn,
+.about-btn {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -95,4 +104,172 @@ ul li {
 
 ul li a:hover {
   color: #505f79;
+}
+/* work section */
+.works {
+  width: 375px;
+  background: #e5e5e5;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 327px;
+  height: 552px;
+  margin: 20px 24px;
+  padding: 16px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.snapshoot {
+  width: 100%;
+}
+
+.frame {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  width: 250px;
+  height: 24px;
+}
+
+.frame h3,
+h4 {
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  color: #172b4d;
+}
+
+.project-title {
+  font-size: 2rem;
+  line-height: 2.75rem;
+  font-weight: 700;
+  color: #344563;
+}
+
+.tags {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  width: 200px;
+  height: 24px;
+}
+
+.tags h3 {
+  padding: 4px 12px;
+  background: #ebebff;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #6070ff;
+}
+
+.primary-text {
+  width: 295px;
+  /* height: 76px; */
+}
+
+.primary-text p {
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+  color: #344563;
+}
+
+.simple-button {
+  font-weight: 500;
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  height: 24px;
+  color: #396df2;
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid #6070ff;
+  background: #fff;
+}
+
+/* about section */
+
+.about {
+  width: 375px;
+  border-top-right-radius: 30px;
+}
+
+.about-title h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  text-align: left;
+}
+
+.frame2 {
+  margin: 20px 0;
+}
+
+.frame3 {
+  background: #f7f7f9;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 4px 0;
+}
+
+.language-card,
+.card3 {
+  margin: 20px 0;
+}
+.frame2 ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.l-title,
+.l-icon,
+.f-title,
+.f-icon,
+.s-title,
+.s-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+.l-title {
+  padding-right: 70px;
+}
+
+.language-card,
+.framework-card,
+.skill-card i {
+  font-size: 20px;
+}
+
+.skill-card {
+  margin-bottom: 50px;
+}
+.img,
+.text {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+}
+
+.f-title {
+  padding-right: 50px;
+}
+.s-title {
+  padding-right: 180px;
 }
