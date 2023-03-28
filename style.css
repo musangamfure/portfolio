@@ -25,17 +25,17 @@ body {
   width: 375px;
 }
 
+.header a {
+  text-decoration: none;
+  color: #6070ff;
+}
+
 .header ul li a {
   font-size: 30px;
   padding: 12px 0;
   margin-right: 15px;
   color: #ababab;
   cursor: pointer;
-}
-
-.header a {
-  text-decoration: none;
-  color: #6070ff;
 }
 
 .menu-bar i {
@@ -71,6 +71,7 @@ body {
   line-height: 24px;
   color: #344563;
   text-align: justify;
+
   /* padding: 12px 0; */
 }
 
@@ -101,6 +102,17 @@ body {
 }
 
 .hero-social-icons i {
+  font-size: 25px;
+  color: #ababab;
+}
+
+.language-card,
+.framework-card,
+.skill-card i {
+  font-size: 20px;
+}
+
+.about-social-icons i {
   font-size: 25px;
   color: #ababab;
 }
@@ -270,12 +282,6 @@ h4 {
   padding-right: 70px;
 }
 
-.language-card,
-.framework-card,
-.skill-card i {
-  font-size: 20px;
-}
-
 .skill-card {
   margin-bottom: 20px;
 }
@@ -292,11 +298,6 @@ hr {
 
 .about-social-icons {
   margin: 12px 0;
-}
-
-.about-social-icons i {
-  font-size: 25px;
-  color: #ababab;
 }
 
 .about-social-icons i:hover {
