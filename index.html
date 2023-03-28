@@ -45,9 +45,9 @@
       </div>
       <div class="hero-text">
         <p>
-          I’m a software developer! I can help you build a product , feature or
+          I'm a software developer! I can help you build a product , feature or
           website Look through some of my work and experience! If you like what
-          you see and have a project you need coded, don’t hesitate to contact
+          you see and have a project you need coded, don't hesitate to contact
           me.
         </p>
       </div>
@@ -130,6 +130,7 @@
           </div>
           <button class="simple-button">See Project</button>
         </div>
+        <!-- end of single card -->
         <div class="card flex">
           <img
             class="snapshoot"
@@ -158,15 +159,17 @@
           </div>
           <button class="simple-button">See Project</button>
         </div>
+        <!-- end of single card -->
       </div>
     </section>
 
     <!--  about section-->
+
     <section class="about">
       <div class="container grid">
-        <div class="card flex">
+        <div class="flex">
           <div class="about-title">
-            <h1>About Myself</h1>
+            <h2>About Myself</h2>
           </div>
           <div class="about-text">
             <p>
@@ -193,6 +196,8 @@
             </ul>
           </div>
           <button class="simple-button">Get my resume</button>
+        </div>
+        <div class="flex">
           <div class="frame2">
             <ul>
               <li>
@@ -233,6 +238,7 @@
                   </div>
                 </div>
               </li>
+              <hr />
               <li>
                 <div class="skill-card">
                   <div class="s-title"><h2>Skills</h2></div>
@@ -240,8 +246,54 @@
                     <i class="fa-sharp fa-solid fa-angle-right"></i>
                   </div>
                 </div>
+                <hr />
               </li>
             </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section class="contact">
+      <div class="conatainer grid">
+        <div class="flex">
+          <div class="contact-title">
+            <h2>About Myself</h2>
+          </div>
+          <div class="contact-text">
+            <p>
+              I'm a software developer! I can help you build a product , feature
+              or website Look through some of my work and experience! If you
+              like what you see and have a project you need coded, don't
+              hesitate to contact me.
+            </p>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="contact-form">
+            <form action="https://formspree.io/f/xbjezjgw" method="POST">
+              <input
+                type="text"
+                name="Name"
+                maxlength="30"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                maxlength="500"
+                placeholder="Write Your Message here"
+              ></textarea>
+              <button class="simple-button" type="submit">Get in touch</button>
+            </form>
           </div>
         </div>
       </div>
