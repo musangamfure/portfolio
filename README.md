@@ -1,4 +1,3 @@
-
 <div align="center">
 
   <h3><b>Portforlio Project</b></h3>
@@ -31,11 +30,10 @@
 
 # 📖 Portforlio project <a name="about-project"></a>
 
-
-
 **Portfolio Project** is a project built to practice HTML and CSS skill and master the pull request, linters, readme writing and crafting a good pull request message as well as solidify my skill on Github workflows.
 
 ## 🛠 Built With <a name="built-with"></a>
+
 1. HTML
 2. CSS
 
@@ -55,7 +53,6 @@
 - **index.html file**
 - **style.css file**
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
@@ -69,6 +66,7 @@ In order to run this project you need:
 1. Any browser of your choice.
 2. Any code aditor preferably Vs code.
 3. git.
+
 ### Setup
 
 Clone this repository to your desired folder:
@@ -84,7 +82,6 @@ Example commands:
 
 Install this project with:
 
-
 run this command:
 
 ```sh
@@ -92,11 +89,11 @@ run this command:
   npm install
 ```
 
-
 ### Usage
 
 To run this project:
 You can open this project in two ways:
+
 1. Use live server to open index.html file
 2. Right click on index in the cloned directory and open with your browser
 
@@ -114,20 +111,23 @@ Not avaibale for now.
 
 ## 👥 Authors <a name="authors"></a>
 
-
 👤 **Emmanuel**
 
 - GitHub: [@https://github.com/musangamfure]()
 - Twitter: [@https://twitter.com/musangamfure]()
 - LinkedIn: [@https://www.linkedin.com/in/musangamfura-emmanuel-6a214a262/]()
 
+👤 **Biftu**
+
+- GitHub: [@Bifabig](https://github.com/Bifabig)
+- Twitter: [@biftu94](https://twitter.com/biftu94)
+- LinkedIn: [Biftu Girma](https://www.linkedin.com/in/biftu-girma-3598a8126/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
 
 - [ ] **Header**
 - [ ] **Other sections**
@@ -149,7 +149,6 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-
 If you like it, just leave a star. it will mean alots.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -157,7 +156,6 @@ If you like it, just leave a star. it will mean alots.
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
 
 I would like to thank the entire team of <a href="https://www.microverse.org/">Microverse</a> for the support in all.
 

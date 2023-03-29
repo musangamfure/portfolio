@@ -10,32 +10,32 @@ body {
 
 .hero {
   width: 375px;
-  padding: 0 24px;
-  background-image: url(./images/background\ image.png);
+  padding: 40px 24px;
+  background-image: url(./images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: left;
 }
 
 .header {
-  padding-top: 40px;
+  padding: 40px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 375px;
 }
 
-ul li a {
+.header a {
+  text-decoration: none;
+  color: #6070ff;
+}
+
+.header ul li a {
   font-size: 30px;
   padding: 12px 0;
   margin-right: 15px;
   color: #ababab;
   cursor: pointer;
-}
-
-.header a {
-  text-decoration: none;
-  color: #6070ff;
 }
 
 .menu-bar i {
@@ -71,7 +71,8 @@ ul li a {
   line-height: 24px;
   color: #344563;
   text-align: justify;
-  padding: 12px 0;
+
+  /* padding: 12px 0; */
 }
 
 .btn {
@@ -90,12 +91,33 @@ ul li a {
   cursor: pointer;
 }
 
-ul li {
-  text-decoration: none;
-  display: inline-block;
+.hero-social-icons {
+  margin: 12px 0;
 }
 
-ul li a:hover {
+.hero-social-icons ul li {
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.hero-social-icons i {
+  font-size: 25px;
+  color: #ababab;
+}
+
+.language-card,
+.framework-card,
+.skill-card i {
+  font-size: 20px;
+}
+
+.about-social-icons i {
+  font-size: 25px;
+  color: #ababab;
+}
+
+.hero-social-icons i:hover {
   color: #505f79;
 }
 
@@ -104,12 +126,16 @@ ul li a:hover {
 .works {
   width: 375px;
   background: #e5e5e5;
+  margin: 50px 0;
+  border-top-right-radius: 50px;
+  padding: 30px 0;
 }
 
 .container {
   display: grid;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 
 .card {
@@ -195,20 +221,28 @@ h4 {
   border-radius: 8px;
   border: 1px solid #6070ff;
   background: #fff;
+  cursor: pointer;
 }
 
 /* about section */
 
 .about {
   width: 375px;
-  border-top-right-radius: 30px;
+  padding: 40px 24px;
 }
 
-.about-title h1 {
+.about-text {
+  display: flex;
+  justify-content: center;
+  margin: 12px 0;
+}
+
+.about-title h2 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 3.25rem;
   text-align: left;
+  color: #172b4d;
 }
 
 .frame2 {
@@ -248,14 +282,26 @@ h4 {
   padding-right: 70px;
 }
 
-.language-card,
-.framework-card,
-.skill-card i {
-  font-size: 20px;
+.skill-card {
+  margin-bottom: 20px;
 }
 
-.skill-card {
-  margin-bottom: 50px;
+hr {
+  color: #dfe1e6;
+}
+
+.about-social-icons ul li {
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.about-social-icons {
+  margin: 12px 0;
+}
+
+.about-social-icons i:hover {
+  color: #505f79;
 }
 
 .img,
@@ -271,4 +317,92 @@ h4 {
 
 .s-title {
   padding-right: 180px;
+}
+
+/* Contact Section */
+
+.contact {
+  width: 375px;
+  border-top-left-radius: 90px;
+  padding: 150px 24px 50px 24px;
+  background: #6070ff;
+  display: flex;
+  flex-direction: column;
+  margin: 80px 0 20px 0;
+  justify-content: center;
+  align-content: center;
+  background-image: url(./images/contact.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* .contact.container {
+  margin-bottom: 50px;
+} */
+
+.contact-text {
+  margin: 12px 0;
+}
+
+.contact-title h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: center;
+  color: #fff;
+}
+
+.contact p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  width: 327px;
+  margin: 60px 0 50px 0;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: 1px solid #cfd8dc;
+  outline: none;
+  padding: 15px;
+  margin: 12px 0;
+  color: #172b4d;
+  font-size: 1.125rem;
+  border-radius: 8px;
+}
+
+form textarea {
+  height: 170px;
+}
+
+/* footer section */
+
+.shape {
+  height: 5px;
+  width: 134px;
+  left: 120px;
+  top: 21px;
+  border-radius: 10px;
+  background: #0d151e;
+  display: flex;
+  justify-content: center;
+  margin-top: -27px;
+  margin-bottom: 30px;
+}
+
+footer {
+  width: 375px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 165px 0 130px;
 }
