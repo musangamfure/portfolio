@@ -328,14 +328,18 @@ hr {
   background: #6070ff;
   display: flex;
   flex-direction: column;
-  margin: 80px 0;
+  margin: 80px 0 20px 0;
   justify-content: center;
   align-content: center;
   background-image: url(./images/contact.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: right;
+  background-position: center;
 }
+
+/* .contact.container {
+  margin-bottom: 50px;
+} */
 
 .contact-text {
   margin: 12px 0;
@@ -349,18 +353,18 @@ hr {
   color: #fff;
 }
 
-.contact-text p {
+.contact p {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   color: #ebebff;
-  text-align: justify;
+  text-align: center;
 }
 
 .contact-form {
   display: flex;
   width: 327px;
-  margin: 30px 0;
+  margin: 60px 0 50px 0;
 }
 
 form input,
@@ -377,4 +381,28 @@ form textarea {
 
 form textarea {
   height: 170px;
+}
+
+/* footer section */
+
+.shape {
+  height: 5px;
+  width: 134px;
+  left: 120px;
+  top: 21px;
+  border-radius: 10px;
+  background: #0d151e;
+  display: flex;
+  justify-content: center;
+  margin-top: -27px;
+  margin-bottom: 30px;
+}
+
+footer {
+  width: 375px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 165px 0 130px;
 }
