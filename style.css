@@ -48,6 +48,19 @@ body {
   color: #6070ff;
 }
 
+.about-lang-bottom li {
+  display: flex;
+  column-gap: 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-basis: 7.6rem;
+  gap: 1rem;
+  border-radius: 8px;
+  margin: 12px 0;
+  padding: 9px 12px;
+  text-decoration: none;
+}
+
 .nav-links ul li {
   display: flex;
   flex-direction: column;
@@ -244,23 +257,17 @@ body {
 
 /* ==========ABOUT SECTION============= */
 
-.about-text {
-  border-top-right-radius: 90px;
-  display: flex;
-  justify-content: center;
-  margin: 12px 0;
-}
-
 .about-title h2 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 3.25rem;
   text-align: left;
-  color: #172b4d;
+  color: #091e42;
 }
 
 .frame2 {
   margin: 20px 0;
+  width: 100%;
 }
 
 .frame3 {
@@ -276,6 +283,7 @@ body {
 }
 
 .frame2 ul li {
+  /* width: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -401,6 +409,69 @@ form textarea {
   height: 170px;
 }
 
+/* practices */
+
+.about {
+  padding: 5.125rem 1.5rem;
+  border-top-right-radius: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-title {
+  padding-bottom: 0.75rem;
+}
+
+.bg-n-300 {
+  background: #f7f7f9;
+}
+
+.ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.about-lang-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23px 50px 23px 0;
+  cursor: pointer;
+}
+
+.about-skills,
+.about-frameworks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 0.75rem 2.5rem 0.75rem 0;
+}
+
+.about-frameworks {
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.about-frameworks-top {
+  align-items: center;
+  justify-content: space-between;
+  padding: 23px 40px 23px 0;
+  cursor: pointer;
+}
+
+.about-skills {
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.about-skills-top {
+  align-items: center;
+  justify-content: space-between;
+  padding: 23px 40px 23px 0;
+  cursor: pointer;
+}
+
 /* ==========MEDIA QUERY============= */
 
 @media screen and (min-width: 786px) {
@@ -454,12 +525,6 @@ form textarea {
     border-top-right-radius: 90px;
   }
 
-  .about {
-    width: 100%;
-    padding: 8.875rem;
-    border-top-left-radius: 90px;
-  }
-
   .card {
     background: #fff;
     width: 100%;
@@ -479,54 +544,25 @@ form textarea {
     flex-basis: 42%;
   }
 
-  .frame2 ul li {
+  .about {
+    padding: 6rem;
     flex-direction: row;
+    column-gap: 37px;
+    border-top-right-radius: 8rem;
   }
 
-  .text {
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 20px;
+  .about-myself {
+    flex-basis: 25rem;
   }
 
-  .about-col-1 {
-    flex-basis: 42%;
+  .about-tools {
+    flex-basis: 25rem;
   }
 
-  .about-col-2 {
-    flex-basis: 55%;
-  }
-
-  .card2 {
+  .about-lang-bottom {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.75rem;
-  }
-
-  .frame3 {
-    display: block;
-    width: 7.625rem;
-    height: auto;
-  }
-
-  .f-title {
-    padding-right: 180px;
-  }
-
-  .s-title {
-    padding-right: 280px;
-  }
-
-  .l-title {
-    padding-right: 170px;
-  }
-
-  .about-title h2 {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 52px;
-    text-align: left;
+    -moz-column-gap: 12px;
+    column-gap: 12px;
   }
 
   .contact-form {
@@ -569,5 +605,31 @@ form textarea {
     background-repeat: repeat;
     background-size: contain;
     background-position: center;
+  }
+}
+
+@media screen and(min-width: 600px) {
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+    align-items: center;
+  }
+
+  .about-col-1 {
+    width: 43%;
+    flex-basis: 43%;
+  }
+
+  .about-col-2 {
+    flex-basis: 55%;
+  }
+
+  .card2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
   }
 }
