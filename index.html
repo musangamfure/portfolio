@@ -4,15 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- end of google fonts -->
-    <!-- fontawesome -->
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -20,288 +12,324 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- end of fontawesome -->
-    <!-- style css -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- end of style css -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Emmanuel</title>
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="logo">
-        <a href="index.html"><h1 class="logo">LOGO</h1></a>
+    <!-- -----------nav----------- -->
+    <div class="navbar">
+      <div class="nav-center">
+        <!-- header -->
+        <div class="nav-header">
+          <a href="index.html"><h1 class="logo">Emmanuel</h1></a>
+          <buttton class="toggle-btn">
+            <i class="fa-solid fa-bars"></i>
+          </buttton>
+        </div>
+        <!-- links -->
+        <div class="nav-links">
+          <ul>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="#about" class="nav-link">about</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
       </div>
-
-      <nav class="menu-bar">
-        <i class="fa-solid fa-bars"></i>
-      </nav>
-    </header>
-    <section class="hero">
-      <div class="hero-title">
+    </div>
+    <!-- -----------End of nav----------- -->
+    <main class="page">
+      <!-- ---------hero section ----------->
+      <section class="hero">
         <h1>
           I'm Emmanuel.<br />
           Grad to see you!
         </h1>
-      </div>
-      <div class="hero-text">
         <p>
           I'm a software developer! I can help you build a product , feature or
           website Look through some of my work and experience! If you like what
           you see and have a project you need coded, don't hesitate to contact
           me.
         </p>
-      </div>
-      <div class="btn">
         <button class="hero-btn" type="button">let's connect</button>
-      </div>
-      <div class="hero-social-icons">
-        <ul>
-          <li>
-            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-medium"></i></a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- works showcase -->
-    <section class="works">
-      <div class="container grid">
-        <!-- single card -->
-        <div class="card flex">
-          <img
-            class="snapshoot"
-            src="./images/Snapshoot Portfolio.png"
-            alt=""
-          />
-          <h1 class="project-title">Tonic</h1>
-          <div class="frame">
-            <h4 class="client">CANOPY</h4>
-            <img src="./images/Counter.png" alt="" class="counter" />
-            <h4 class="role">Back End Dev</h4>
-            <img src="./images/Counter.png" alt="" class="counter" />
-
-            <p class="year">2015</p>
-          </div>
-          <div class="primary-text">
-            <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-          </div>
-          <div class="tags">
-            <h3>HTML</h3>
-            <h3>CSS</h3>
-            <h3>JavaScript</h3>
-          </div>
-          <button class="simple-button">See Project</button>
+        <div class="hero-social">
+          <ul>
+            <li>
+              <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-medium"></i></a>
+            </li>
+          </ul>
         </div>
-        <!-- end single card -->
-        <div class="card flex">
-          <img
-            class="snapshoot"
-            src="./images/Snapshoot Portfolio 1.png"
-            alt=""
-          />
-          <h1 class="project-title">Multi-Post Stories</h1>
-          <div class="frame">
-            <h4 class="client">CANOPY</h4>
-            <img src="./images/Counter.png" alt="" class="counter" />
-            <h4 class="role">Back End Dev</h4>
-            <img src="./images/Counter.png" alt="" class="counter" />
+      </section>
 
-            <p class="year">2015</p>
+      <!-- ------------works section------- -->
+
+      <section class="works">
+        <!-- ----------single card-------- -->
+        <div class="card">
+          <div class="work-col-1">
+            <img class="snapshoot" src="./images/nature.png" alt="" />
           </div>
-          <div class="primary-text">
-            <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
+          <div class="work-col-2">
+            <h3 class="project-title">Tonic</h3>
+            <div class="frame">
+              <h4 class="client">CANOPY</h4>
+              <img src="./images/Counter.png" alt="" class="counter" />
+              <h4 class="role">Back End Dev</h4>
+              <img src="./images/Counter.png" alt="" class="counter" />
+
+              <p class="year">2015</p>
+            </div>
+            <div class="primary-text">
+              <p>
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required.
+              </p>
+            </div>
+            <div class="tags">
+              <h3>HTML</h3>
+              <h3>CSS</h3>
+              <h3 class="ruby">Ruby on Rails</h3>
+              <h3>JavaScript</h3>
+            </div>
+            <button class="simple-button" type="button">See Project</button>
           </div>
-          <div class="tags">
-            <h3>HTML</h3>
-            <h3>CSS</h3>
-            <h3>JavaScript</h3>
-          </div>
-          <button class="simple-button">See Project</button>
         </div>
-        <!-- end of single card -->
-        <div class="card flex">
-          <img
-            class="snapshoot"
-            src="./images/Snapshoot Portfolio 3.png"
-            alt=""
-          />
-          <h1 class="project-title">Tonic</h1>
-          <div class="frame">
-            <h4 class="client">CANOPY</h4>
-            <img src="./images/Counter.png" alt="" class="counter" />
-            <h4 class="role">Back End Dev</h4>
-            <img src="./images/Counter.png" alt="" class="counter" />
+        <!--------- end of single card------ -->
+        <div class="card">
+          <div class="work-col-2">
+            <h3 class="project-title">Multi-Post Stories</h3>
+            <div class="frame">
+              <h4 class="client">FACEBOOK</h4>
+              <img src="./images/Counter.png" alt="" class="counter" />
+              <h4 class="role">Full Stack Dev</h4>
+              <img src="./images/Counter.png" alt="" class="counter" />
 
-            <p class="year">2015</p>
+              <p class="year">2015</p>
+            </div>
+            <div class="primary-text">
+              <p>
+                Experimental content creation feature that allows users to add
+                to an existing story over the course of a day without spamming
+                their friends.
+              </p>
+            </div>
+            <div class="tags">
+              <h3>HTML</h3>
+              <h3>CSS</h3>
+              <h3>Ruby on Rails</h3>
+              <h3>JavaScript</h3>
+            </div>
+            <button class="simple-button" type="button">See Project</button>
           </div>
-          <div class="primary-text">
-            <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
+          <div class="work-col-1">
+            <img class="snapshoot" src="./images/professinal.png" alt="" />
           </div>
-          <div class="tags">
-            <h3>HTML</h3>
-            <h3>CSS</h3>
-            <h3>JavaScript</h3>
-          </div>
-          <button class="simple-button">See Project</button>
         </div>
-        <!-- end of single card -->
-      </div>
-    </section>
+        <div class="card">
+          <div class="work-col-1">
+            <img
+              class="snapshoot"
+              src="./images/Snapshoot-Portfolio.svg"
+              alt=""
+            />
+          </div>
+          <div class="work-col-2">
+            <h3 class="project-title">Tonic</h3>
+            <div class="frame">
+              <h4 class="client">CANOPY</h4>
+              <img src="./images/Counter.png" alt="" class="counter" />
+              <h4 class="role">Back End Dev</h4>
+              <img src="./images/Counter.png" alt="" class="counter" />
 
-    <!--  about section-->
-
-    <section class="about">
-      <div class="container grid">
-        <div class="flex">
-          <div class="about-title">
-            <h2>About Myself</h2>
+              <p class="year">2015</p>
+            </div>
+            <div class="primary-text">
+              <p>
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required.
+              </p>
+            </div>
+            <div class="tags">
+              <h3>HTML</h3>
+              <h3>CSS</h3>
+              <h3>Ruby on Rails</h3>
+              <h3>JavaScript</h3>
+            </div>
+            <button class="simple-button" type="button">See Project</button>
           </div>
-          <div class="about-text">
-            <p>
-              I'm a software developer! I can help you build a product , feature
-              or website Look through some of my work and experience! If you
-              like what you see and have a project you need coded, don't
-              hesitate to contact me.
-            </p>
-          </div>
-          <div class="btn">
-            <button class="hero-btn" type="button">let's connect</button>
-          </div>
-          <div class="about-social-icons">
-            <ul>
-              <li>
-                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-medium"></i></a>
-              </li>
-            </ul>
-          </div>
-          <button class="simple-button">Get my resume</button>
         </div>
-        <div class="flex">
-          <div class="frame2">
-            <ul>
-              <li>
-                <div class="lang-container">
-                  <div class="language-card">
-                    <div class="l-title"><h2>Languages</h2></div>
-                    <div class="l-icon">
-                      <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                  </div>
-                  <div class="card2">
-                    <div class="frame3">
-                      <div class="img">
-                        <img src="./images/js.png" alt="" />
+        <div class="card">
+          <div class="work-col-2">
+            <h3 class="project-title">Uber Navigation</h3>
+            <div class="frame">
+              <h4 class="client">Uber</h4>
+              <img src="./images/Counter.png" alt="" class="counter" />
+              <h4 class="role">Lead Developer</h4>
+              <img src="./images/Counter.png" alt="" class="counter" />
+
+              <p class="year">2015</p>
+            </div>
+            <div class="primary-text">
+              <p>
+                A smart assistant to make driving more safe, efficient, and fun
+                by unlocking your most expensive computer: your car.
+              </p>
+            </div>
+            <div class="tags">
+              <h3>HTML</h3>
+              <h3>CSS</h3>
+              <h3>Ruby on Rails</h3>
+              <h3>JavaScript</h3>
+            </div>
+            <button class="simple-button" type="button">See Project</button>
+          </div>
+          <div class="work-col-1">
+            <img class="snapshoot" src="./images/uber.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ----------about section -->
+      <section class="about">
+        <div class="card">
+          <div class="about-col-1">
+            <div class="about-title">
+              <h2>About Myself</h2>
+            </div>
+            <div class="about-text">
+              <p>
+                I'm a software developer! I can help you build a product ,
+                feature or website Look through some of my work and experience!
+                If you like what you see and have a project you need coded,
+                don't hesitate to contact me.
+              </p>
+            </div>
+            <div class="btn">
+              <button class="hero-btn" type="button">let's connect</button>
+            </div>
+            <div class="about-social-icons">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-medium"></i></a>
+                </li>
+              </ul>
+            </div>
+            <button class="simple-button" type="button">Get my resume</button>
+          </div>
+          <div class="about-col-2">
+            <div class="frame2">
+              <ul>
+                <li>
+                  <div class="lang-container">
+                    <div class="language-card">
+                      <div class="l-title"><h2>Languages</h2></div>
+                      <div class="l-icon">
+                        <i class="fa-solid fa-angle-down"></i>
                       </div>
-                      <div class="text">JavaScript</div>
                     </div>
-                    <div class="frame3">
-                      <div class="img">
-                        <img src="./images/html.png" alt="" />
+                    <div class="card2">
+                      <div class="frame3">
+                        <div class="img">
+                          <img src="./images/js.png" alt="" />
+                        </div>
+                        <div class="text">JavaScript</div>
                       </div>
-                      <div class="text">HTML</div>
-                    </div>
-                    <div class="frame3">
-                      <div class="img">
-                        <img src="./images/css.png" alt="" />
+                      <div class="frame3">
+                        <div class="img">
+                          <img src="./images/html.png" alt="" />
+                        </div>
+                        <div class="text">HTML</div>
                       </div>
-                      <div class="text">CSS</div>
+                      <div class="frame3">
+                        <div class="img">
+                          <img src="./images/css.png" alt="" />
+                        </div>
+                        <div class="text">CSS</div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
-              <li>
-                <div class="framework-card">
-                  <div class="f-title"><h2>Frameworks</h2></div>
-                  <div class="f-icon">
-                    <i class="fa-sharp fa-solid fa-angle-right"></i>
+                </li>
+                <li>
+                  <div class="framework-card">
+                    <div class="f-title"><h2>Frameworks</h2></div>
+                    <div class="f-icon">
+                      <i class="fa-sharp fa-solid fa-angle-right"></i>
+                    </div>
                   </div>
-                </div>
-              </li>
-              <hr />
-              <li>
-                <div class="skill-card">
-                  <div class="s-title"><h2>Skills</h2></div>
-                  <div class="s-icon">
-                    <i class="fa-sharp fa-solid fa-angle-right"></i>
+                </li>
+                <li>
+                  <div class="skill-card">
+                    <div class="s-title"><h2>Skills</h2></div>
+                    <div class="s-icon">
+                      <i class="fa-sharp fa-solid fa-angle-right"></i>
+                    </div>
                   </div>
-                </div>
-                <hr />
-              </li>
-            </ul>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <!-- ----------contact section--------- -->
 
-    <!-- Contact Section -->
+      <section class="contact">
+        <div class="contact-title">
+          <h2>Contact me</h2>
+        </div>
+        <div class="contact-text">
+          <p>
+            I'm a software developer! I can help you build a product , feature
+            or website Look through some of my work and experience! If you like
+            what you see and have a project you need coded, don't hesitate to
+            contact me.
+          </p>
+        </div>
 
-    <section class="contact">
-      <div class="conatainer grid">
-        <div class="flex">
-          <div class="contact-title">
-            <h2>Contact me</h2>
-          </div>
-          <div class="contact-text">
-            <p>
-              I'm a software developer! I can help you build a product , feature
-              or website Look through some of my work and experience! If you
-              like what you see and have a project you need coded, don't
-              hesitate to contact me.
-            </p>
-          </div>
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xbjezjgw" method="POST">
+            <input
+              type="text"
+              name="Name"
+              maxlength="30"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              type="email"
+              name="Email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="Message"
+              maxlength="500"
+              placeholder="Write Your Message here"
+              required
+            ></textarea>
+            <button class="simple-button" type="submit">Get in touch</button>
+          </form>
         </div>
-        <div class="flex">
-          <div class="contact-form">
-            <form action="https://formspree.io/f/xbjezjgw" method="POST">
-              <input
-                type="text"
-                name="Name"
-                maxlength="30"
-                placeholder="Your Name"
-                required
-              />
-              <input
-                type="email"
-                name="Email"
-                placeholder="Your Email"
-                required
-              />
-              <textarea
-                name="Message"
-                maxlength="500"
-                placeholder="Write Your Message here"
-                required
-              ></textarea>
-              <button class="simple-button" type="submit">Get in touch</button>
-            </form>
-          </div>
-        </div>
-      </div>
-      <!-- <div class="shape"></div> -->
-    </section>
-    <footer>
-      <div class="shape"></div>
-    </footer>
+      </section>
+    </main>
   </body>
 </html>
