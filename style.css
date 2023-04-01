@@ -138,7 +138,7 @@ body {
 
 .hero-social i {
   font-size: 1.5625rem;
-  color: #ababab;
+  color: #505f79;
 }
 
 .hero-social ul li a {
@@ -322,7 +322,7 @@ body {
 }
 
 .fa-brands {
-  color: #ababab;
+  color: #505f79;
 }
 
 .about-social-icons {
@@ -421,6 +421,11 @@ form textarea {
 
 .about-title {
   padding-bottom: 0.75rem;
+  color: #091e42;
+}
+
+.about-text p {
+  color: #344563;
 }
 
 .bg-n-300 {
@@ -439,6 +444,19 @@ form textarea {
   align-items: center;
   padding: 23px 50px 23px 0;
   cursor: pointer;
+}
+
+.about-lang-top h2 {
+  color: #344563;
+}
+
+.text {
+  color: #344563;
+}
+
+.about-skills,
+.about-frameworks h2 {
+  color: #344563;
 }
 
 .about-skills,
