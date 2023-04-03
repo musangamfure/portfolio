@@ -103,7 +103,7 @@ Not availbale for now
 
 ### Deployment
 
-Not avaibale for now.
+You can access this project live on: https://musangamfure.github.io/portfolio/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
