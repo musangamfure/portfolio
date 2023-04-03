@@ -75,7 +75,7 @@ Example commands:
 
 ```sh
   cd my-folder
-  git clone https://github.com/musangamfure/hello.git
+  git clone https://github.com/musangamfure/portfolio.git
 ```
 
 ### Install
@@ -103,7 +103,8 @@ Not availbale for now
 
 ### Deployment
 
-You can access this project live on: https://musangamfure.github.io/portfolio/
+You can access this application on:
+[Live Demo](https://musangamfure.github.io/portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
