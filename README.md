@@ -103,7 +103,7 @@ Not availbale for now
 
 ### Deployment
 
-Not avaibale for now.
+You can access the application on:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
