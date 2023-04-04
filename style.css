@@ -31,7 +31,7 @@ body {
 .nav-header a {
   text-decoration: none;
   cursor: pointer;
-  color: #6070ff;
+  color: #5566f8;
 }
 
 .logo {
@@ -122,7 +122,7 @@ body {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
-  color: #7f8cff;
+  color: #5c6ae4;
   padding: 0.4rem 0;
   border: none;
   background: #fff;
@@ -234,7 +234,7 @@ body {
   border-radius: 8px;
   font-size: 0.75rem;
   font-weight: 600;
-  color: #6070ff;
+  color: #4658f4;
   margin-right: 0.4rem;
 }
 
