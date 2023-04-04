@@ -409,6 +409,11 @@ form textarea {
   height: 170px;
 }
 
+label {
+  width: 90%;
+  color: #fff;
+}
+
 /* practices */
 
 .about {
