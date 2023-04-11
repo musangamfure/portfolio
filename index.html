@@ -23,6 +23,8 @@
     <title>Emmanuel</title>
 
     <link rel="stylesheet" href="style.css" />
+
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <!-- -----------nav----------- -->
@@ -37,9 +39,14 @@
         </div>
         <!-- links -->
         <div class="nav-links">
-          <ul>
+          <ul class="show">
+            <img
+              class="close-icon"
+              src="./images/menu-Icon.svg"
+              alt="menu icon"
+            />
             <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-            <li><a href="#about" class="nav-link">about</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
           </ul>
         </div>
@@ -85,7 +92,7 @@
 
       <!-- ------------works section------- -->
 
-      <section class="works">
+      <section class="works" id="portfolio">
         <!-- ----------single card-------- -->
         <div class="card">
           <div class="work-col-1">
@@ -212,7 +219,7 @@
       </section>
 
       <!-- ----------about section -->
-      <section class="about">
+      <section class="about" id="about">
         <div class="about-myself">
           <div class="about-title">
             <h2>About Myself</h2>
@@ -299,7 +306,7 @@
       </section>
       <!-- ----------contact section--------- -->
 
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="contact-title">
           <h2>Contact me</h2>
         </div>

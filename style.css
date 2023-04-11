@@ -66,26 +66,50 @@ body {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  border-top: 1px solid rgb(126, 125, 125);
 }
 
-.nav-links ul li a {
+.nav-links a {
   text-decoration: none;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 20px;
-  text-align: center;
-  color: #344563;
-  padding: 1rem 0;
-}
-
-.nav-link {
-  display: inline-block;
-  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 44px;
+  text-align: start;
+  color: #fff;
+  padding: 0.5rem 0;
+  cursor: pointer;
 }
 
 .nav-links {
   display: none;
+}
+
+.show-links {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #6070ff;
+  padding: 76px 96px 0 28px;
+  transition: 0.6s ease;
+  opacity: 98%;
+  backdrop-filter: blur(20px);
+}
+
+.close-icon {
+  display: block;
+  position: absolute;
+  top: 56px;
+  right: 24px;
+  cursor: pointer;
+}
+
+.show {
+  padding-top: 8%;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ============MAIN PAGE======= */
@@ -515,12 +539,31 @@ form textarea {
 
   .nav-links {
     display: flex;
+    align-items: center;
+    align-content: center;
+  }
+
+  .show-links {
+    display: none;
+  }
+
+  .show {
+    flex-direction: row;
+    align-items: center;
   }
 
   .nav-links ul li {
     display: inline-block;
     margin-right: 1rem;
     border: none;
+  }
+
+  .nav-links ul li a {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    color: #344563;
   }
 
   .nav-header {
@@ -623,6 +666,10 @@ form textarea {
     background-repeat: repeat;
     background-size: contain;
     background-position: center;
+  }
+
+  .close-icon {
+    display: none;
   }
 }
 
