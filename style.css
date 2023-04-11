@@ -94,11 +94,7 @@ body {
   background: #6070ff;
   padding: 76px 96px 0 28px;
   transition: 0.6s ease;
-<<<<<<< HEAD
-=======
   opacity: 0.98;
-  backdrop-filter: blur(20px);
->>>>>>> af91acb7b269d7d612dbeff0fcd39af280bd3db6
 }
 
 .close-icon {
