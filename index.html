@@ -93,129 +93,53 @@
       <!-- ------------works section------- -->
 
       <section class="works" id="portfolio">
-        <!-- ----------single card-------- -->
-        <div class="card">
-          <div class="work-col-1">
-            <img class="snapshoot" src="./images/nature.png" alt="" />
-          </div>
-          <div class="work-col-2">
-            <h3 class="project-title">Tonic</h3>
+        <!-- projsect modal -->
+        <div class="project-modal">
+          <div class="modal-body">
+            <img class="modal-btn" src="./images/close-icon.png" alt="" />
+            <h3>Tonic</h3>
             <div class="frame">
               <h4 class="client">CANOPY</h4>
               <img src="./images/Counter.png" alt="" class="counter" />
               <h4 class="role">Back End Dev</h4>
               <img src="./images/Counter.png" alt="" class="counter" />
 
-              <p class="year">2015</p>
+              <h4 class="year">2015</h4>
             </div>
-            <div class="primary-text">
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
-              </p>
+            <div class="project-img">
+              <img
+                class="snapshoot"
+                src="./images/mobile-detail.svg"
+                alt="project photo"
+              />
             </div>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essent
+            </p>
             <div class="tags">
               <h3>HTML</h3>
               <h3>CSS</h3>
               <h3 class="ruby">Ruby on Rails</h3>
               <h3>JavaScript</h3>
             </div>
-            <button class="simple-button" type="button">See Project</button>
+            <hr />
+            <div class="modal-buttons">
+              <button class="simple-button" type="button">
+                See Live <img src="./images/live-icon.svg" alt="live icon" />
+              </button>
+              <button class="simple-button" type="button">
+                See Source
+                <img src="./images/github-icon.svg" alt="github icon" />
+              </button>
+            </div>
           </div>
         </div>
-        <!--------- end of single card------ -->
-        <div class="card">
-          <div class="work-col-2">
-            <h3 class="project-title">Multi-Post Stories</h3>
-            <div class="frame">
-              <h4 class="client">FACEBOOK</h4>
-              <img src="./images/Counter.png" alt="" class="counter" />
-              <h4 class="role">Full Stack Dev</h4>
-              <img src="./images/Counter.png" alt="" class="counter" />
-
-              <p class="year">2015</p>
-            </div>
-            <div class="primary-text">
-              <p>
-                Experimental content creation feature that allows users to add
-                to an existing story over the course of a day without spamming
-                their friends.
-              </p>
-            </div>
-            <div class="tags">
-              <h3>HTML</h3>
-              <h3>CSS</h3>
-              <h3>Ruby on Rails</h3>
-              <h3>JavaScript</h3>
-            </div>
-            <button class="simple-button" type="button">See Project</button>
-          </div>
-          <div class="work-col-1">
-            <img class="snapshoot" src="./images/professinal.png" alt="" />
-          </div>
-        </div>
-        <div class="card">
-          <div class="work-col-1">
-            <img
-              class="snapshoot"
-              src="./images/Snapshoot-Portfolio.svg"
-              alt=""
-            />
-          </div>
-          <div class="work-col-2">
-            <h3 class="project-title">Tonic</h3>
-            <div class="frame">
-              <h4 class="client">CANOPY</h4>
-              <img src="./images/Counter.png" alt="" class="counter" />
-              <h4 class="role">Back End Dev</h4>
-              <img src="./images/Counter.png" alt="" class="counter" />
-
-              <p class="year">2015</p>
-            </div>
-            <div class="primary-text">
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
-              </p>
-            </div>
-            <div class="tags">
-              <h3>HTML</h3>
-              <h3>CSS</h3>
-              <h3>Ruby on Rails</h3>
-              <h3>JavaScript</h3>
-            </div>
-            <button class="simple-button" type="button">See Project</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="work-col-2">
-            <h3 class="project-title">Uber Navigation</h3>
-            <div class="frame">
-              <h4 class="client">Uber</h4>
-              <img src="./images/Counter.png" alt="" class="counter" />
-              <h4 class="role">Lead Developer</h4>
-              <img src="./images/Counter.png" alt="" class="counter" />
-
-              <p class="year">2015</p>
-            </div>
-            <div class="primary-text">
-              <p>
-                A smart assistant to make driving more safe, efficient, and fun
-                by unlocking your most expensive computer: your car.
-              </p>
-            </div>
-            <div class="tags">
-              <h3>HTML</h3>
-              <h3>CSS</h3>
-              <h3>Ruby on Rails</h3>
-              <h3>JavaScript</h3>
-            </div>
-            <button class="simple-button" type="button">See Project</button>
-          </div>
-          <div class="work-col-1">
-            <img class="snapshoot" src="./images/uber.png" alt="" />
-          </div>
-        </div>
+        <!-- end of project modal -->
       </section>
 
       <!-- ----------about section -->
@@ -320,10 +244,15 @@
         </div>
 
         <div class="contact-form">
-          <form action="https://formspree.io/f/xbjezjgw" method="POST">
+          <form
+            id="form"
+            action="https://formspree.io/f/xbjezjgw"
+            method="POST"
+          >
             <input
               type="text"
               name="Name"
+              class="name"
               maxlength="30"
               placeholder="Your Name"
               required
@@ -332,15 +261,18 @@
               type="email"
               name="Email"
               placeholder="Your Email"
+              class="email"
               required
             />
             <textarea
               name="Message"
+              class="message"
               maxlength="500"
               placeholder="Write Your Message here"
               required
             ></textarea>
             <button class="simple-button" type="submit">Get in touch</button>
+            <p class="error"></p>
           </form>
         </div>
       </section>
