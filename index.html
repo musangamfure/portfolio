@@ -320,10 +320,15 @@
         </div>
 
         <div class="contact-form">
-          <form action="https://formspree.io/f/xbjezjgw" method="POST">
+          <form
+            class="form"
+            action="https://formspree.io/f/xbjezjgw"
+            method="POST"
+          >
             <input
               type="text"
               name="Name"
+              class="name"
               maxlength="30"
               placeholder="Your Name"
               required
@@ -331,6 +336,7 @@
             <input
               type="email"
               name="Email"
+              class="email"
               placeholder="Your Email"
               required
             />
@@ -341,6 +347,8 @@
               required
             ></textarea>
             <button class="simple-button" type="submit">Get in touch</button>
+            <p class="error"></p>
+            <h4 class="sent"></h4>
           </form>
         </div>
       </section>
