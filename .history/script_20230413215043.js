@@ -107,18 +107,18 @@ projects.forEach((project) => {
 
 // ========= Window Popup ==========
 
-const projectModals = document.querySelector(".project-modal");
-const modalCloseBtn = document.querySelector("#close-icon");
+const projectModals = document.querySelectorAll(".project-modal");
+const modalCloseBtns = document.querySelectorAll(".modal-btn");
 const seeProjectBtns = document.querySelectorAll(".simple-button");
+
+// const modal = function (modalClick) {
+//   projectModals[modalClick].classList.add("active");
+// };
 
 seeProjectBtns.forEach((seeProjectBtn, i) => {
   seeProjectBtn.addEventListener("click", () => {
-    projectModals.classList.toggle("hide");
+    projectModals.classList.remove("hide");
   });
-});
-
-modalCloseBtn.addEventListener('click', () => {
-  projectModals.classList.toggle("hide");
 });
 
 modalCloseBtns.forEach((modalCloseBtn) => {

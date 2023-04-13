@@ -117,10 +117,6 @@ seeProjectBtns.forEach((seeProjectBtn, i) => {
   });
 });
 
-modalCloseBtn.addEventListener('click', () => {
-  projectModals.classList.toggle("hide");
-});
-
 modalCloseBtns.forEach((modalCloseBtn) => {
   modalCloseBtn.addEventListener("click", () => {
     projectModals.forEach((modalview) => {
