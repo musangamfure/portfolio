@@ -105,57 +105,7 @@ projects.forEach((project) => {
   worksSection.appendChild(card);
 });
 
-// ========= Window Popup ===========
-
-const projectData = [
-  {
-    name: "Tonic",
-    client: "CANOPY",
-    role: "Back End Dev",
-    year: "2015",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...",
-    tags: ["HTML", "CSS", "Ruby on Rails", "JavaScript"],
-    liveUrl: "https://example.com",
-    sourceUrl: "https://github.com/example",
-    image: "./images/mobile-detail.svg",
-  },
-  // Add more project objects here
-];
-
-const projectModal = document.createElement("div");
-projectModal.classList.add("project-modal");
-
-const modalBody = document.createElement("div");
-modalBody.classList.add("modal-body");
-projectModal.appendChild(modalBody);
-
-const closeButton = document.createElement("img");
-closeButton.classList.add("modal-btn");
-closeButton.src = "./images/close-icon.png";
-closeButton.alt = "";
-modalBody.appendChild(closeButton);
-
-const projectName = document.createElement("h3");
-projectName.textContent = projectData[0].name;
-modalBody.appendChild(projectName);
-
-const frame = document.createElement("div");
-frame.classList.add("frame");
-modalBody.appendChild(frame);
-
-const client = document.createElement("h4");
-client.classList.add("client");
-client.textContent = projectData[0].client;
-frame.appendChild(client);
-
-const counter1 = document.createElement("img");
-counter1.classList.add("counter");
-counter1.src = "./images/Counter.png";
-counter1.alt = "";
-frame.appendChild;
-
-// ==============Project Modal========
+// ========= Window Popup ==========
 
 const projectModals = document.querySelectorAll(".project-modal");
 const modalCloseBtns = document.querySelectorAll(".modal-btn");
@@ -177,27 +127,4 @@ modalCloseBtns.forEach((modalCloseBtn) => {
       modalview.classList.remove("active");
     });
   });
-});
-
-// ========Client side validation============
-
-const email = document.querySelector(".email");
-const form = document.querySelector("#form");
-const error = document.querySelector(".error");
-
-function isItUppercase(value) {
-  if (value.match(/^[a-z@.0-9-_]*$/)) {
-    return true;
-  }
-  return false;
-}
-
-form.addEventListener("submit", (e) => {
-  if (isItUppercase(email.value)) {
-    error.textContent = " Message Sent!";
-    error.style.color = red;
-  } else {
-    e.preventDefault();
-    error.textContent = "Email should be in lowerCase";
-  }
 });
