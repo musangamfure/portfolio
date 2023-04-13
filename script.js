@@ -111,13 +111,13 @@ const projectModals = document.querySelectorAll(".project-modal");
 const modalCloseBtns = document.querySelectorAll(".modal-btn");
 const seeProjectBtns = document.querySelectorAll(".simple-button");
 
-const modal = function (modalClick) {
-  projectModals[modalClick].classList.add("active");
-};
+// const modal = function (modalClick) {
+//   projectModals[modalClick].classList.add("active");
+// };
 
 seeProjectBtns.forEach((seeProjectBtn, i) => {
   seeProjectBtn.addEventListener("click", () => {
-    modal(i);
+    projectModals.classList.toggle("hide");
   });
 });
 

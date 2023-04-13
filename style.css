@@ -207,14 +207,11 @@ body {
   left: 0;
   backdrop-filter: blur(10px);
   background-color: rgba(0, 0, 0, 0.1);
-  /* visibility: hidden; */
-  /* opacity: 0; */
   transition: 0.3s ease;
 }
 
-.project-modal.active {
-  visibility: visible;
-  opacity: 1;
+.hide {
+  display: none;
 }
 
 .project-img {
