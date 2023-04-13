@@ -23,27 +23,45 @@ navLink.forEach((n) =>
 
 // =============End of Mobile Menu=========
 
-// ========Client side validation============
+// =========Local Storage ============
 
-const email = document.querySelector(".email");
-const form = document.querySelector("#form");
-const error = document.querySelector(".error");
+if (storageAvailable("localStorage")) {
+  const setFormValues = () => {
+    const formData = {
+      name: form.name.value,
+      email: form.email.value,
+      message: form.message.value,
+    };
 
-function isItUppercase(value) {
-  if (value.match(/^[a-z@.0-9-_]*$/)) {
-    return true;
-  }
-  return false;
+    localStorage.setItem("formData", JSON.stringify(formData));
+  };
+
+  form.name.addEventListener("change", setFormValues);
+  form.email.addEventListener("change", setFormValues);
+  form.message.addEventListener("change", setFormValues);
+
+  const checkLocal = () => {
+    let name = "";
+    let email = "";
+    let message = "";
+
+    if (JSON.parse(localStorage.getItem("formData")) === null) {
+      name = "";
+      email = "";
+      message = "";
+    } else {
+      ({ name, email, message } = JSON.parse(localStorage.getItem("formData")));
+    }
+
+    if (name !== "empty" || email !== "empty" || message !== "empty") {
+      form.name.value = name;
+      form.email.value = email;
+      form.message.value = message;
+    }
+  };
+
+  document.addEventListener("DOMContentLoaded", () => {
+    checkLocal();
+  });
 }
-
-form.addEventListener("submit", (e) => {
-  if (isItUppercase(email.value)) {
-    error.textContent = " Message Sent!";
-    error.style.color = red;
-  } else {
-    e.preventDefault();
-    error.textContent = "Email should be in lowerCase";
-  }
-});
-
-// =============End of form validation ===========
+// ========= End of Local Storage ============
