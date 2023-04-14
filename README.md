@@ -36,6 +36,7 @@
 
 1. HTML
 2. CSS
+3. JavaScript
 
 ### Tech Stack <a name="tech-stack"></a>
 

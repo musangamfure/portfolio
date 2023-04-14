@@ -1,5 +1,3 @@
-// ================Mobile Menu=============
-
 const humbargerMenu = document.querySelector(".toggle-btn");
 
 const navLinks = document.querySelector(".nav-links");
@@ -46,4 +44,8 @@ form.addEventListener("input", () => {
   localStorage.setItem("formData", JSON.stringify(newFormData));
 });
 
-// ========= End of Local Storage ============
+navLink.forEach((n) =>
+  n.addEventListener("click", () => {
+    navLinks.classList.remove("show-links");
+  })
+);
