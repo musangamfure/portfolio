@@ -433,10 +433,11 @@ form textarea {
 }
 
 .error p {
-  text-align: center;
   color: red;
+  text-align: left;
 }
-.sent {
+
+.sent h4 {
   text-align: center;
   color: green;
 }
