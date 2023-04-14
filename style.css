@@ -432,6 +432,16 @@ form textarea {
   height: 170px;
 }
 
+.error p {
+  color: red;
+  text-align: left;
+}
+
+.sent h4 {
+  text-align: center;
+  color: green;
+}
+
 /* practices */
 
 .about {
