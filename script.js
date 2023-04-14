@@ -40,7 +40,7 @@ form.addEventListener("input", () => {
   const newFormData = {
     name: formName.value,
     email: formEmail.value,
-    // message: formMessage.value,
+    message: formMessage.value,
   };
 
   localStorage.setItem("formData", JSON.stringify(newFormData));
