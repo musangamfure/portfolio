@@ -25,43 +25,28 @@ navLink.forEach((n) =>
 
 // =========Local Storage ============
 
-if (storageAvailable("localStorage")) {
-  const setFormValues = () => {
-    const formData = {
-      name: form.name.value,
-      email: form.email.value,
-      message: form.message.value,
-    };
+const form = document.querySelector("#form");
+const formName = document.querySelector(".name");
+const formEmail = document.querySelector(".email");
+const formMessage = document.querySelector(".message");
 
-    localStorage.setItem("formData", JSON.stringify(formData));
+// Load any existing form data from local storage
+const formData = JSON.parse(localStorage.getItem("formData")) || {};
+
+// Populate form fields with data from local storage
+formName.value = formData.name || "";
+formEmail.value = formData.email || "";
+formMessage.value = formData.message || "";
+
+// Save form data to local storage when any input changes
+form.addEventListener("input", () => {
+  const newFormData = {
+    name: formName.value,
+    email: formEmail.value,
+    message: formMessage.value,
   };
 
-  form.name.addEventListener("change", setFormValues);
-  form.email.addEventListener("change", setFormValues);
-  form.message.addEventListener("change", setFormValues);
+  localStorage.setItem("formData", JSON.stringify(newFormData));
+});
 
-  const checkLocal = () => {
-    let name = "";
-    let email = "";
-    let message = "";
-
-    if (JSON.parse(localStorage.getItem("formData")) === null) {
-      name = "";
-      email = "";
-      message = "";
-    } else {
-      ({ name, email, message } = JSON.parse(localStorage.getItem("formData")));
-    }
-
-    if (name !== "empty" || email !== "empty" || message !== "empty") {
-      form.name.value = name;
-      form.email.value = email;
-      form.message.value = message;
-    }
-  };
-
-  document.addEventListener("DOMContentLoaded", () => {
-    checkLocal();
-  });
-}
 // ========= End of Local Storage ============
