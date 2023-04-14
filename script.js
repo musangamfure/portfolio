@@ -30,20 +30,17 @@ const formName = document.querySelector(".name");
 const formEmail = document.querySelector(".email");
 const formMessage = document.querySelector(".message");
 
-// Load any existing form data from local storage
 const formData = JSON.parse(localStorage.getItem("formData")) || {};
 
-// Populate form fields with data from local storage
 formName.value = formData.name || "";
 formEmail.value = formData.email || "";
 formMessage.value = formData.message || "";
 
-// Save form data to local storage when any input changes
 form.addEventListener("input", () => {
   const newFormData = {
     name: formName.value,
     email: formEmail.value,
-    message: formMessage.value,
+    // message: formMessage.value,
   };
 
   localStorage.setItem("formData", JSON.stringify(newFormData));
