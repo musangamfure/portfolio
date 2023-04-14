@@ -25,7 +25,7 @@ navLink.forEach((n) =>
 // ========Client side validation============
 
 const email = document.querySelector(".email");
-const form = document.querySelector(".form");
+const form = document.querySelector("#form");
 const error = document.querySelector(".error");
 const sent = document.querySelector(".sent");
 
