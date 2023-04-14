@@ -434,22 +434,6 @@ form textarea {
   height: 170px;
 }
 
-<<<<<<< HEAD
-.error {
-  text-align: center;
-  color: red;
-=======
-.error p {
-  color: red;
-  text-align: left;
-}
-
-.sent h4 {
-  text-align: center;
-  color: green;
->>>>>>> 7ff33d335091fb44d52a68d2d947f338379f111f
-}
-
 /* practices */
 
 .about {
