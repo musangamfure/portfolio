@@ -46,3 +46,29 @@ form.addEventListener('submit', (e) => {
 });
 
 // =============End of form validation ===========
+
+// =========Local Storage ============
+
+const formName = document.querySelector('.name');
+const formEmail = document.querySelector('.email');
+const formMessage = document.querySelector('.message');
+
+const formData = JSON.parse(localStorage.getItem('formData')) || {};
+
+formName.value = formData.name || '';
+formEmail.value = formData.email || '';
+formMessage.value = formData.message || '';
+
+form.addEventListener('input', () => {
+  const newFormData = {
+    name: formName.value,
+    email: formEmail.value,
+    message: formMessage.value,
+  };
+
+  localStorage.setItem('formData', JSON.stringify(newFormData));
+});
+
+navLink.forEach((n) => n.addEventListener('click', () => {
+  navLinks.classList.remove('show-links');
+}));
