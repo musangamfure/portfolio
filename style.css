@@ -228,7 +228,6 @@ body {
 .tags {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .ruby {
@@ -343,7 +342,7 @@ body {
   margin-bottom: 12px;
 }
 
-.modal-body h3 {
+.modal-title {
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
@@ -367,6 +366,15 @@ body {
   flex-direction: row;
   justify-content: center;
   gap: 8px;
+}
+
+.source,
+.live {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: nowrap;
 }
 
 hr {
