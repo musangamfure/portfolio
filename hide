@@ -290,9 +290,9 @@ body {
   transition: 0.3s ease;
 }
 
-/* .hide {
+.hide {
   display: none;
-} */
+}
 
 .modal-img {
   width: 100%;
