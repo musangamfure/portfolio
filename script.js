@@ -51,7 +51,7 @@ form.addEventListener("submit", (e) => {
 
 // =========Local Storage ============
 
-const formName = document.querySelector("#name");
+const formName = document.querySelector(".name");
 const formEmail = document.querySelector(".email");
 const formMessage = document.querySelector(".message");
 
