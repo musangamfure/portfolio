@@ -1,33 +1,31 @@
 // ================Mobile Menu===============
-const humbargerMenu = document.querySelector(".toggle-btn");
+const humbargerMenu = document.querySelector('.toggle-btn');
 
-const navLinks = document.querySelector(".nav-links");
+const navLinks = document.querySelector('.nav-links');
 
-const closeIcon = document.querySelector(".close-icon");
+const closeIcon = document.querySelector('.close-icon');
 
-const navLink = document.querySelectorAll(".nav-link");
+const navLink = document.querySelectorAll('.nav-link');
 
-humbargerMenu.addEventListener("click", () => {
-  navLinks.classList.add("show-links");
+humbargerMenu.addEventListener('click', () => {
+  navLinks.classList.add('show-links');
 });
-closeIcon.addEventListener("click", () => {
-  navLinks.classList.remove("show-links");
+closeIcon.addEventListener('click', () => {
+  navLinks.classList.remove('show-links');
 });
 
-navLink.forEach((n) =>
-  n.addEventListener("click", () => {
-    navLinks.classList.remove("show-links");
-  })
-);
+navLink.forEach((n) => n.addEventListener('click', () => {
+  navLinks.classList.remove('show-links');
+}));
 
 // ================ End of Mobile Menu===============
 
 // ========Client side validation============
 
-const email = document.querySelector(".email");
-const form = document.querySelector("#form");
-const error = document.querySelector(".error");
-const sent = document.querySelector(".sent");
+const email = document.querySelector('.email');
+const form = document.querySelector('#form');
+const error = document.querySelector('.error');
+const sent = document.querySelector('.sent');
 
 function isItUppercase(value) {
   if (value.match(/^[a-z@.0-9-_]*$/)) {
@@ -36,14 +34,14 @@ function isItUppercase(value) {
   return false;
 }
 
-form.addEventListener("submit", (e) => {
+form.addEventListener('submit', (e) => {
   if (isItUppercase(email.value)) {
-    sent.textContent = " Message Sent!";
-    email.style.border = "1px solid green";
+    sent.textContent = ' Message Sent!';
+    email.style.border = '1px solid green';
   } else {
     e.preventDefault();
-    error.textContent = "Email should be in lowerCase";
-    email.style.border = "2px solid red";
+    error.textContent = 'Email should be in lowerCase';
+    email.style.border = '2px solid red';
   }
 });
 
@@ -51,28 +49,26 @@ form.addEventListener("submit", (e) => {
 
 // =========Local Storage ============
 
-const formName = document.querySelector(".name");
-const formEmail = document.querySelector(".email");
-const formMessage = document.querySelector(".message");
+const formName = document.querySelector('.name');
+const formEmail = document.querySelector('.email');
+const formMessage = document.querySelector('.message');
 
-const formData = JSON.parse(localStorage.getItem("formData")) || {};
+const formData = JSON.parse(localStorage.getItem('formData')) || {};
 
-formName.value = formData.name || "";
-formEmail.value = formData.email || "";
-formMessage.value = formData.message || "";
+formName.value = formData.name || '';
+formEmail.value = formData.email || '';
+formMessage.value = formData.message || '';
 
-form.addEventListener("input", () => {
+form.addEventListener('input', () => {
   const newFormData = {
     name: formName.value,
     email: formEmail.value,
     message: formMessage.value,
   };
 
-  localStorage.setItem("formData", JSON.stringify(newFormData));
+  localStorage.setItem('formData', JSON.stringify(newFormData));
 });
 
-navLink.forEach((n) =>
-  n.addEventListener("click", () => {
-    navLinks.classList.remove("show-links");
-  })
-);
+navLink.forEach((n) => n.addEventListener('click', () => {
+  navLinks.classList.remove('show-links');
+}));
