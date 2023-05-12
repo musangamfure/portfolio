@@ -52,18 +52,18 @@ form.addEventListener('submit', (e) => {
 const projects = [
   {
     id: 1,
-    title: 'Tonic',
-    client: 'CANOPY',
-    role: 'Back End Dev',
-    year: '2015',
+    title: 'Todo List App',
+    client: 'Microverse',
+    role: 'Full-stack Dev',
+    year: '2023',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'A minimalistic and simple todo-list app which allow users to add, edit and remove tasks.',
     tags: ['HTML', 'CSS', 'Ruby', 'JavaScript'],
-    image: './images/nature.png',
+    image: './images/todo-list-App.PNG',
     modaltext:
-      "  Lorem Ipsum is simply dummy text of the printing and typesettin industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley otype and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap intoelectronic typesetting, remaining essent",
-    live: 'https://github.com/musangamfure/portfolio',
-    source: 'https://musangamfure.github.io/portfolio/',
+      'Todo-List-App is a simple minimalistic web application for creating and managing to-do lists. It allows users to create new tasks, mark tasks as completed, edit tasks, and delete tasks as needed. The app is built with HTML, CSS, JavaScript for frontend and Ruby on backend ',
+    live: 'https://musangamfure.github.io/portfolio/',
+    source: 'https://github.com/musangamfure/portfolio',
   },
   {
     id: 2,
@@ -223,7 +223,7 @@ modalCloseBtn.forEach((button) => {
 });
 
 // =============End of Popup Window ===========
-=======
+
 // =========Local Storage ============
 
 const formName = document.querySelector('.name');
