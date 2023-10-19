@@ -14,9 +14,11 @@ closeIcon.addEventListener('click', () => {
   navLinks.classList.remove('show-links');
 });
 
-navLink.forEach((n) => n.addEventListener('click', () => {
-  navLinks.classList.remove('show-links');
-}));
+navLink.forEach((n) =>
+  n.addEventListener('click', () => {
+    navLinks.classList.remove('show-links');
+  })
+);
 
 // ================ End of Mobile Menu===============
 
@@ -54,61 +56,61 @@ const projects = [
     id: 1,
     title: 'Todo List App',
     client: 'Microverse',
-    role: 'Full-stack Dev',
+    role: 'Front-End Developer',
     year: '2023',
     description:
       'A minimalistic and simple todo-list app which allow users to add, edit and remove tasks.',
-    tags: ['HTML', 'CSS', 'Ruby', 'JavaScript'],
-    image: './images/todo-list-App.PNG',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    image: './images/todo.png',
     modaltext:
-      'Todo-List-App is a simple minimalistic web application for creating and managing to-do lists. It allows users to create new tasks, mark tasks as completed, edit tasks, and delete tasks as needed. The app is built with HTML, CSS, JavaScript for frontend and Ruby on backend ',
+      'Todo-List-App is a simple minimalistic web application for creating and managing to-do lists. It allows users to create new tasks, mark tasks as completed, edit tasks, and delete tasks as needed. The app is built with HTML, CSS, JavaScript for frontend and Local storage ',
     live: 'https://musangamfure.github.io/portfolio/',
     source: 'https://github.com/musangamfure/portfolio',
   },
   {
     id: 2,
-    title: 'Multi-Post Stories',
-    client: 'FACEBOOK',
-    role: 'Full Stack Dev',
-    year: '2015',
+    title: 'Mona Ecommerce Store',
+    client: 'Microverse',
+    role: 'Front-End Dev',
+    year: '2023',
     description:
-      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    tags: ['HTML', 'CSS', 'Ruby', 'JavaScript'],
-    image: './images/professinal.png',
+      ' This is a highly customizable, visually appealing and user-friendly modern ecommerce template is designed to adapt seamlessly to all device screens.',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    image: './images/demo.png',
     modaltext:
-      "  Lorem Ipsum is simply dummy text of the printing and typesettin industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley otype and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap",
-    live: 'https://github.com/musangamfure/portfolio',
-    source: 'https://musangamfure.github.io/portfolio/',
+      '  This is a highly customizable, visually appealing and user-friendly modern ecommerce template is designed to adapt seamlessly to all device screens, ensuring an exceptional user experience for desktops, laptops, tablets, and smartphones. t functions flawlessly across all major web browsers, providing a consistent and reliable shopping experience for your customers.Tailor the template to your brands unique identity with ease. Customize colors, fonts, and layouts to align with your business aesthetics. ',
+    live: 'https://musangamfure.github.io/mona-ecommerce-website/',
+    source: 'https://github.com/musangamfure/mona-ecommerce-website',
   },
   {
     id: 3,
-    title: 'Tonic',
-    client: 'CANOPY',
-    role: 'Back End Dev',
-    year: '2015',
+    title: 'Car Hub',
+    client: 'Microverse',
+    role: 'Full-Stack Dev',
+    year: '2023',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    tags: ['HTML', 'CSS', 'Ruby on Rails', 'JavaScript'],
-    image: './images/Snapshoot-Portfolio.svg',
+      'Carhub App is the React client of a robust full-stack web application powered by the Ruby on Rails API.',
+    tags: ['HTML', 'CSS', 'Ruby on Rails', 'React', 'Redux'],
+    image: './images/car-hub.png',
     modaltext:
-      "  Lorem Ipsum is simply dummy text of the printing and typesettin industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley otype and scrambled it to make a type specimen book. remaining essent",
-    live: 'https://github.com/musangamfure/portfolio',
-    source: 'https://musangamfure.github.io/portfolio/',
+      ' Welcome to Carhub, the go-to destination for effortless car reservation and purchasing. Carhub App is the React client of a robust full-stack web application powered by the Ruby on Rails API. This dynamic platform is designed to provide users with a hassle-free experience when booking reservations for renting or buying their dream car. Browse a diverse range of cars, from economy to luxury, and make reservations in just a few clicks. Customize your reservation with options for pickup and drop-off locations, dates, and more ',
+    live: 'https://carreservation.netlify.app/',
+    source: 'https://github.com/musangamfure/Car-Hub',
   },
   {
     id: 4,
-    title: 'Uber Navigation',
-    client: 'Uber',
-    role: 'Lead Developer',
-    year: '2015',
+    title: 'Space Travelers App',
+    client: 'Microverse',
+    role: 'Front-End Dev',
+    year: '2023',
     description:
-      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    tags: ['HTML', 'CSS', 'Ruby', 'JavaScript'],
-    image: './images/uber.png',
+      'A Space-Travelers gateway app for Rockets reserving and participating in captivating space missions',
+    tags: ['HTML', 'CSS', 'Redux', 'React'],
+    image: './images/space-travelers.png',
     modaltext:
-      '  Lorem Ipsum is simply dummy text of the printing and typesettin industry. known printer took a galley otype and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap intoelectronic typesetting, remaining essent Lorem Ipsum is simply dummy text of the printing and typesettin industry. known printer took a galley otype and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap intoelectronic typesetting, remaining essent  ',
-    live: 'https://github.com/musangamfure/portfolio',
-    source: 'https://musangamfure.github.io/portfolio/',
+      ' This is Space-Travelers gateway app for Rockets reserving and participating in captivating space missions.  Our app is a versatile platform, leveraging API calls through RapidAPI, and developed with React and Redux Toolkit. Stay informed with real-time mission updates, launch schedules, and mission statuses. Space-Travelers keeps you connected to the ever-changing world of space exploration.  ',
+    live: 'https://dev--adorable-pegasus-239e60.netlify.app/',
+    source: 'https://github.com/musangamfure/Space-Travelers',
   },
 ];
 
@@ -142,8 +144,8 @@ projects.forEach((project) => {
         ${project.tags.map((tag) => `<h3>${tag}</h3>`).join('')}
       </div>
       <button class="simple-button" data-modal-target="#modal${
-  project.id
-}" type="button">See Project</button>
+        project.id
+      }" type="button">See Project</button>
     </div>
     <section>
         <div class="project-modal hide" id="modal${project.id}" >
@@ -165,8 +167,8 @@ projects.forEach((project) => {
             </div>
             <div class="project-img">
               <img class="modal-img" src="${
-  project.image
-}" alt="project photo" />
+                project.image
+              }" alt="project photo" />
             </div>
             <p class="modaltext">${project.modaltext}</p>
             <div class="tags">
@@ -176,8 +178,8 @@ projects.forEach((project) => {
             <div class="modal-buttons">
               <button class="simple-button" type="button">
                <a class="live" href="${
-  project.live
-}">See Live <img src="./images/live-icon.svg" alt="live icon" /></a> 
+                 project.live
+               }">See Live <img src="./images/live-icon.svg" alt="live icon" /></a> 
               </button>
               <button class="simple-button" type="button">
               <a class="source" href="${project.source}">See Source
@@ -246,6 +248,8 @@ form.addEventListener('input', () => {
   localStorage.setItem('formData', JSON.stringify(newFormData));
 });
 
-navLink.forEach((n) => n.addEventListener('click', () => {
-  navLinks.classList.remove('show-links');
-}));
+navLink.forEach((n) =>
+  n.addEventListener('click', () => {
+    navLinks.classList.remove('show-links');
+  })
+);
